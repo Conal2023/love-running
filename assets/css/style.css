@@ -1,18 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     border: none;
 }
+
 body {
-font-family: lato,sans-serif;
-font-weight: 300;
-color: #3a3a3a;
+    font-family: lato, sans-serif;
+    font-weight: 300;
+    color: #3a3a3a;
 }
 
 /* headings and logo*/
 
-h1, h2 {
+h1,
+h2 {
 
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
@@ -33,7 +36,9 @@ h1, h2 {
     font-size: 110%;
     letter-spacing: 4px;
 }
-#menu, #logo {
+
+#menu,
+#logo {
     line-height: 75px;
 }
 
@@ -47,6 +52,7 @@ h1, h2 {
     text-decoration: none;
     color: inherit;
 }
+
 #menu a:hover {
     border-bottom: 1px solid #3a3a3a;
 }
@@ -63,9 +69,12 @@ h1, h2 {
 
     position: relative;
 }
-#cover-text, #cover-text h2{
-    color:#fff;
+
+#cover-text,
+#cover-text h2 {
+    color: #fff;
 }
+
 #hero-image {
     height: 600px;
     width: 100%;
@@ -80,57 +89,87 @@ h1, h2 {
 /* creates the level of zoon for hero image */
 
 @keyframes hero-zoom {
-    from{
-    transform: scale(1);
+    from {
+        transform: scale(1);
     }
 
-    to{
+    to {
         transform: scale(1.1);
 
     }
-    }
+}
 
-    #cover-text {
-        font-size: 130%;
-        font-family: Oswald, sans-serif;
-        text-transform: uppercase;
-        letter-spacing: 4px;
+#cover-text {
+    font-size: 130%;
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 
-        width: 300px;
-        height: 200px;
-        
-        padding-top: 40px;
-        padding-left: 10px;
+    width: 300px;
+    height: 200px;
 
-        background-color: rgba(241, 109, 107, .7);
+    padding-top: 40px;
+    padding-left: 10px;
 
-       bottom: 30px;
-       right: 150px;
-       
-       position: absolute;
-    }
+    background-color: rgba(241, 109, 107, .7);
 
-    #club-ethos {
-        height: 600px;
+    bottom: 30px;
+    right: 150px;
 
-    }
+    position: absolute;
+}
 
-    #left-about {
-        padding-top: 30px;
-        width: 33%;
-        float: left;
-        background-color: blue;
-    }
+/* club ethos */
 
-    #right-about {
-       padding-top: 30px;
-       width: 33%;
-       float: right; 
-    background-color: silver;
-    }
+#club-ethos {
+    height: 600px;
 
-    #center-about {
-        width: 33%;
-        margin: 0 auto;
-        background-color: green;
-    }
+}
+
+#left-about {
+    padding-top: 30px;
+    width: 33%;
+    float: left;
+    
+}
+
+#right-about {
+    padding-top: 30px;
+    width: 33%;
+    float: right;
+    
+}
+
+#center-about {
+    width: 33%;
+    margin: 0 auto;
+    background-color: green;
+}
+
+hr {
+    border-top: 1px solid #3a3a3a;
+    width: 100%;
+    margin: 5px 0; 
+}
+
+.left-about-heading {
+    width: 60%;
+    float: right;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
+}
+.right-about-heading {
+    width: 60%;
+    float: left;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
+}
+.right-about-heading h2 {
+    text-align: right;
+}
+
+.right-about-heading p {
+    text-align: right;
+}
